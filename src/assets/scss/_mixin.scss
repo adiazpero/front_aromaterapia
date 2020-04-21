@@ -1,0 +1,18 @@
+@mixin letra($tipoletra, $tamanoletra, $font-weight, $color-letra) {
+    font-family: $tipoletra;
+    font-size: $tamanoletra;
+    font-weight: $font-weight;
+    color: $color-letra;
+}
+
+@mixin boton {
+    background: transparent;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@mixin button($colorfondo, $color-letra, $borderadius) {
+    background-color: $colorfondo;
+    color: $color-letra;
+    border-radius: $borderadius;
+}

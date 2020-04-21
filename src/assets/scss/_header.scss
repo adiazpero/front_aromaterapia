@@ -1,0 +1,56 @@
+.navbar {
+    background: #f8f9fad1;
+    height: $nav-height;
+    font-weight: $font-weight;
+    font-family: $tipoletra;
+    @media (max-width: 1200px) {
+        padding: 10px 0px;
+        height: auto;
+    }
+    .logo {
+        padding-left: 50px;
+        padding-right: 50px;
+        @media (max-width: 1200px) {
+            padding: 0px 0px 0px 25px;
+        }
+    }
+    .navbar-brand {
+        color: $color;
+    }
+    .navbar-toggler {
+        @media (max-width: 1200px) {
+            font-size: 0.9rem;
+            border-color: rgba(0, 0, 0, 0);
+            margin-right: 20px;
+        }
+    }
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    display: block;
+                    margin: 0px 0px 0px 50px;
+                    padding: 3rem 0.5rem;
+                    height: $nav-height;
+                    &:hover {
+                        background-color: rgba(162, 199, 214, 0.46);
+                    }
+                    @media(max-width:1200px) {
+                        padding: 30px 30px;
+                        height: 40px;
+                        font-size: 14px;
+                    }
+                }
+                .btn {
+                    margin: 40px 0px 0px 20px;
+                    background: $color;
+                    color: white;
+                    border-color: $color;
+                    &:hover {
+                        background-color: #2f576f;
+                    }
+                }
+            }
+        }
+    }
+}

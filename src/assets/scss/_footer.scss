@@ -1,0 +1,38 @@
+.footer {
+    background: white;
+    .logo-footer {
+        margin-top: 50px;
+    }
+    .texto-footer {
+        height: 200px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        padding: 10px 0px;
+        color: #333333;
+        font-family: $tipoletra;
+        font-weight: $font-weight;
+        p {
+            margin: 15px 0px;
+        }
+    }
+    .footer-copyright {
+        .copyright {
+            background: #92c4d5;
+            padding: 30px;
+            font-size: 15px;
+            color: white;
+            font-family: $tipoletra;
+            font-weight: 300;
+        }
+    }
+    .btn-final {
+        right: 75px;
+        bottom: 0;
+        border-radius: 4px 4px 0 0;
+        background-color: #333;
+        height: 40px;
+        position: fixed;
+        width: 50px;
+        opacity: .9;
+    }
+}
