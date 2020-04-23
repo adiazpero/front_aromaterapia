@@ -1,1 +1,46 @@
-<p>bienestar works!</p>
+<div>
+    <img src="../../assets/images/header/header1.jpg" alt="">
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-12">
+            <h4>TITULO</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores aliquid hic, suscipit, magni culpa illo aspernatur consequuntur veritatis laudantium veniam odit ipsam nulla, cum laborum quas quae praesentium ullam?</p>
+        </div>
+
+        <div class="col-12">
+            <img src="../../assets/images/section/imagen7.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-6" *ngFor="let post of listaPosts">
+
+            <div class="card">
+                <img [src]='post.imagen' class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{post.titulo}}</h5>
+                    <p class="card-text">{{post.texto}}</p>
+                    <a href="#" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <img src="../../assets/images/section/imagen11.jpg" alt="">
+    <div>
+        <h4>And This Is Just</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam est perspiciatis quos placeat hic voluptas. Doloribus praesentium asperiores reprehenderit eum quos. Nesciunt nemo quisquam, corrupti reiciendis veniam corporis temporibus sapiente!</p>
+        <div>
+            <button>JOIN THE LARGEST</button>
+        </div>
+    </div>
+</div>

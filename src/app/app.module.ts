@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { BienestarComponent } from './bienestar/bienestar.component';
+import { DetallebienestarComponent } from './detallebienestar/detallebienestar.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { BienestarComponent } from './bienestar/bienestar.component';
     AppComponent,
     MainComponent,
     BienestarComponent,
+    DetallebienestarComponent,
 
   ],
   imports: [

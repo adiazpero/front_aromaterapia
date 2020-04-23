@@ -15,13 +15,13 @@
         height: 100%;
         text-align: center;
         font-size: 50px;
-        color: #f8f9fa;
+        color: black;
         padding-top: 25%;
         .button {
             border: white 2px solid;
             @include boton();
             &:hover {
-                background: rgb(169, 185, 231);
+                background: rgb(247, 193, 231);
             }
         }
     }
@@ -29,20 +29,28 @@
 
 .section-uno {
     margin-top: $margintop-section;
+    padding-right: 0px;
+    padding-left: 0px;
     .texto-uno {
         p {
             @include letra( $tipoletra, $tamanoletra, $font-weight, $color-letra);
             margin-bottom: 20px;
         }
     }
-    .img {
-        width: 100%;
+    .fullsize {
+        padding-right: 0px;
+        padding-left: 0px;
+        .img {
+            width: 100%;
+        }
     }
 }
 
 .section-dos {
     background: rgb(250, 248, 248);
     margin-top: $margintop-section;
+    padding-right: 0px;
+    padding-left: 0px;
     @include letra( $tipoletra, $tamanoletra, $font-weight, $color-letra);
     p {
         padding: 100px 50px 0px 50px;
@@ -50,11 +58,16 @@
     .btn {
         @include button($colorfondo, $color-letra, $borderadius);
         margin: 20px 50px 50px 50px;
-        width: 80%;
+        width: 70%;
+        background: $color;
     }
-    .img {
-        width: 100%;
-        height: auto;
+    .fullsize {
+        padding-right: 0px;
+        padding-left: 0px;
+        .img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -67,4 +80,11 @@
 
 .section-cuatro {
     margin-top: $margintop-section;
+}
+
+.section-cinco {
+    margin-top: $margintop-section;
+    .carousel-item {
+        margin-right: auto !important;
+    }
 }

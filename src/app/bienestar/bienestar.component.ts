@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../models/post';
+import { BienestarService } from '../bienestar.service';
 
 @Component({
   selector: 'app-bienestar',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BienestarComponent implements OnInit {
 
-  constructor() { }
+  listaPosts: Post[];
+
+  constructor(private bienestarservice: BienestarService) { }
+
 
   ngOnInit() {
+    this.listaPosts = this.bienestarservice.getAll();
   }
 
 }
